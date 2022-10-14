@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cabra </title>
+</head>
 <body>
-  <head>
-    <title>
-      cabra 
-    </title>
-  
-  </head>
-
-<audio id="myAudio">
-  <source src="mee.ogg" type="audio/ogg">
-  <source src="mee.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+  <audio id="myAudio">
+      <source src="mee.ogg" type="audio/ogg">
+      <source src="mee.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+  </audio>
+          <button onclick="playAudio()" type="button"><img width="100%"  src="https://images.unsplash.com/photo-1505038348242-eb3fde2b728c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FicmF8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60">
+           </button>
 
 
-<button onclick="playAudio()" type="button"><img width="100%"  src="https://images.unsplash.com/photo-1505038348242-eb3fde2b728c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FicmF8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60">
- </button>
+           <script>
+           var x = document.getElementById("myAudio"); 
 
+           function playAudio() { 
+             x.play(); 
+             } 
 
-<script>
-var x = document.getElementById("myAudio"); 
-
-function playAudio() { 
-  x.play(); 
-} 
-
-</script>
-
+             </script>
 </body>
 </html>
